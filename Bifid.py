@@ -30,7 +30,7 @@ def decrypt(tableau,msg,points,cols,rows):
     return res
 
 #msg = 'PDFRRNGBENOPNIAGGF'
-msg = 'BRING ALL YOUR MONEY'
+#msg = 'BRING ALL YOUR MONEY'
 
 def bifid(option,msg):
 	rows, cols, points = [], [], []
@@ -43,6 +43,16 @@ def bifid(option,msg):
 	    res = decrypt(tableau,msg,points,cols,rows)
 	return res
 
+#print(bifid("ENCRYPT",msg))
 
+#Alphagrader testing
+lines = []
 
-print(bifid("ENCRYPT",msg))
+import fileinput
+
+lines = []
+for line in fileinput.input():
+    lines.append(line)
+
+print(bifid(lines[0],lines[1]))
+
