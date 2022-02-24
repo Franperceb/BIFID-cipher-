@@ -48,7 +48,8 @@ def bifid(option,msg):
 #Alphagrader testing
 lines = []
 for line in fileinput.input():
+    line = line.replace('\n','')
     lines.append(line)
-
-print(bifid(lines[0],lines[1]))
+    if(len(lines) == 2):
+        print(bifid(lines[0],lines[1]))
 
