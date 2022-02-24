@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 bifid.py
+python3 Bifid.py
