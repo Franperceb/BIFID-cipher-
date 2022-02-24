@@ -47,10 +47,6 @@ def bifid(option,msg):
 
 #Alphagrader testing
 lines = []
-
-import fileinput
-
-lines = []
 for line in fileinput.input():
     lines.append(line)
 
